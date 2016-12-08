@@ -8,3 +8,6 @@ s130.filename=s130_nrf51_2.0.1_softdevice.hex
 
 s132.url=http://www.nordicsemi.com/eng/content/download/95151/1606944/file/s132_nrf52_2.0.0.zip
 s132.filename=s132_nrf52_2.0.1_softdevice.hex
+
+s132_3_0.url=https://www.nordicsemi.com/eng/nordic/download_resource/56263/7/36703167
+s132_3_0.filename=s132_nrf52_3.1.0_softdevice.hex

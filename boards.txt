@@ -58,6 +58,13 @@ nRF52DK.menu.softdevice.s132.upload.maximum_size=409600
 nRF52DK.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
 nRF52DK.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
 
+nRF52DK.menu.softdevice.s132_3_1_0=S132 3.1.0
+nRF52DK.menu.softdevice.s132_3_1_0.softdevice=s132-3_1_0
+nRF52DK.menu.softdevice.s132_3_1_0.softdeviceversion=3.1.0
+nRF52DK.menu.softdevice.s132_3_1_0.upload.maximum_size=364544
+nRF52DK.menu.softdevice.s132_3_1_0.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
+nRF52DK.menu.softdevice.s132_s3_1_0.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
 nRF52DK.menu.lfclk.lfxo=Crystal Oscillator
 nRF52DK.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
 nRF52DK.menu.lfclk.lfrc=RC Oscillator
@@ -176,6 +183,7 @@ nRF51Dongle.menu.softdevice.s130.softdeviceversion=2.0.1
 nRF51Dongle.menu.softdevice.s130.upload.maximum_size=151552
 nRF51Dongle.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 nRF51Dongle.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_{build.chip}.ld
+
 
 BLENano.name=RedBearLab BLE Nano
 
