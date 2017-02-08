@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
+  Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
   Copyright (c) 2016 Sandeep Mistry All right reserved.
 
   This library is free software; you can redistribute it and/or
@@ -17,29 +17,20 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <nrf.h>
+#include "variant.h"
 
-#include "Arduino.h"
+const uint32_t g_ADigitalPinMap[] = {
+  // D0 - D7
+  8,
+  9,
+  12,
+  17,
+  19,
+  25,
+  28,
+  29,
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-void init( void )
-{
-  NVIC_SetPriority(RTC1_IRQn, 15);
-  NVIC_ClearPendingIRQ(RTC1_IRQn);
-  NVIC_EnableIRQ(RTC1_IRQn);
-
-  NRF_CLOCK->LFCLKSRC = (uint32_t)((CLOCK_LFCLKSRC_SRC_RC << CLOCK_LFCLKSRC_SRC_Pos) & CLOCK_LFCLKSRC_SRC_Msk);
-  NRF_CLOCK->TASKS_LFCLKSTART = 1UL;
-
-  NRF_RTC1->PRESCALER = 0;
-  NRF_RTC1->EVTENSET = RTC_INTENSET_OVRFLW_Msk;
-  NRF_RTC1->INTENSET = RTC_EVTEN_OVRFLW_Msk;
-  NRF_RTC1->TASKS_START = 1;
-}
-
-#ifdef __cplusplus
-}
-#endif
+  // A0 - A1
+  26,
+  27,
+};
